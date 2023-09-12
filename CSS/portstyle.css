@@ -1,0 +1,774 @@
+:root{
+    box-sizing: border-box;}
+
+img    {
+    width: 100%;
+}
+
+@media (min-width:50em) {
+    :root{
+        font: 1.125em;
+    }   
+}
+
+*,
+*::before,
+*::after  {
+    box-sizing: inherit;
+}
+
+body    {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+
+/*header*/
+
+.page-header    {
+    padding:2em 1em 1em 2em;
+    background-color: #0D0D0D;
+}
+
+@media (min-width:35em) {
+    .page-header    {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+}
+
+@media (min-width:50em) {
+    .page-header    {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+
+    }
+}
+
+
+/**LOGO**/
+
+.logo   {
+    position: absolute;
+    top:1em;
+    left: 0.5em;
+    bottom: 1em;    
+}
+
+@media (min-width: 35em)    {
+    .logo{
+    position: absolute;
+    top:1em;
+    left: 0.5em;
+    bottom: 1em;
+}
+
+}
+
+@media (min-width: 50em)    {
+    .logo{
+        position: absolute;
+        top:1em;
+        left: 0.5em;
+        bottom: 1em;
+    }
+    
+    
+}
+
+/****Navigation Section****/
+
+
+/*header navigation a:links*/
+
+.nav-menu a:link  {
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav-menu a:visited   {
+    color: #fff;
+}
+
+.nav-menu a:hover   {
+    text-decoration: underline;
+    color: #322E3D;
+}
+
+.nav-menu a:active    {
+    color: #322E3D;
+}
+
+/*main a links Menu*/
+
+main a:link  {
+    color:#0D0D0D;
+    text-decoration: underline;
+}
+
+main a:visited   {
+    color: #0D0D0D;
+}
+
+main a:hover   {
+    text-decoration: underline;
+    color: #322E3D;
+}
+
+main a:active    {
+    color: #322E3D;
+}
+
+/*footer a links Menu*/
+
+footer a:link  {
+    color:#fff;
+    text-decoration: none;
+}
+
+footer a:visited   {
+    color: #fff;
+}
+
+footer a:hover   {
+    text-decoration: underline;
+    color: #322E3D;
+}
+
+footer a:active    {
+    color: #322E3D;
+}
+
+
+/*outer Menu*/
+
+.menu   {
+    position: relative;
+}
+.menu-toggle    {
+    position: absolute;
+    top: -1em;
+    right: 0em;
+    border: 0;
+    background-color:#0D0D0D;
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.4;
+    text-indent: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu-toggle::after {
+    position: absolute;
+    top: 2em ;
+    left:0.2em ;
+    display: block;
+    content: "\2261";
+    text-indent:0;
+
+}
+
+.menu-dropdown  {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+
+}
+
+.menu.is.open 
+.menu-dropdown    {
+    display: block;
+}
+
+@media (min-width: 35em)    {
+    .menu-toggle   {display:none;   }
+    .menu-dropdown  {display: block;}
+    .menu.is.open 
+    .menu-dropdown    {
+        display: block;}
+
+}
+/*inside Nav Menu*/
+.nav-menu   {   
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #fff;
+    list-style: none;
+    background-color:#0D0D0D;
+
+}
+
+.nav-menu> li + li  {
+    border-top: 1px solid #fff;
+}
+
+.nav-menu > li > a   {   
+    display: block;
+    padding: 0.8em 1em;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+@media (min-width: 35em)    {
+
+.nav-menu   {
+    display: flex;
+    position: static;
+    border: 0;
+    padding: 0 1em;
+}
+.nav-menu > li  {
+    flex:1;
+}
+
+.nav-menu > li + li {
+    border:0;
+}
+
+.nav-menu > li > a {
+    padding: 0.3em;
+    text-align: right;
+}
+}
+
+@media (min-width: 50em)    {
+.nav-menu   {   
+    padding: 0em 4em;
+}   
+}
+
+
+/*hero image section*/
+.hero   {
+    background-size: 100%;
+}
+
+@media (min-width:35em) {
+    .hero   {
+        background-size: 100%;
+    }
+}
+
+@media (min-width: 50em)    {
+    .hero   {
+        background-size: 100%;
+    }
+}
+
+
+
+/* Main Section */
+
+
+.main   {
+    background-color: #fff;
+}
+
+.row_one    {
+    display: flex;    
+    padding: 2em 0em 2em 0em;
+    border: 1px solid #0D0D0D; 
+
+}
+.row_two    {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #0D0D0D;
+}
+
+.row_three    {
+    display: flex;    
+    padding: 2em 0em 2em 0em;
+    border: 1px solid #0D0D0D; 
+}
+.column     {
+    display: flex;
+    padding: 0em 1em 0em 1em;
+}
+.column_one     {
+    display: flex;
+    padding: 0em 1em 0em 1em;
+}
+.column_two     {
+    display: flex;
+    padding: 0em 1em 0em 1em;
+}
+
+footer  {
+    display: flex;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+    text-indent: 0em;
+}
+
+
+
+
+@media (min-width:35em) {
+    .main   { 
+        background-color: #fff;
+    }
+    .row_one    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+    }
+
+   .row_two    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+    }
+
+    .row_three  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+    }
+
+    section.column     {
+        display: flex;
+        padding: 0em 1em 0em 1em;
+    }
+    .column_one     {
+        display: flex;
+        padding: 0em 1em 0em 1em;
+    }
+    .column_two     {
+        display: flex;
+        padding: 0em 1em 0em 1em;
+    }
+    
+    footer  {
+        display: flex;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        color:#fff;
+        text-indent: 0em;
+    }
+}
+
+@media (min-width: 50em)    {
+    .main    {
+        background-color: #fff;
+    }
+    .row_one    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+    }
+
+   .row_two    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+    }
+
+    .row_three  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+    }
+
+    .column     {
+        display: flex;
+        padding: 0em 1em 0em 1em;
+    }
+    .column_one     {
+        display: flex;
+        padding: 0em 1em 0em 1em;
+    }
+    .column_two     {
+        display: flex;
+        padding: 0em 1em 0em 1em;
+    }
+    
+    footer  {
+        display: flex;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        color:#fff;
+        text-indent: 0em;
+    }
+
+
+}
+
+
+
+    
+/*footer section*/
+footer.page-footer  {
+    padding:2em 1em 1em 2em;
+    background-color: #0D0D0D;
+}
+
+@media (min-width: 35em)    {
+    footer.page-footer  {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+}
+
+@media (min-width: 50em)    {
+    footer.page-footer  {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+    
+}
+
+
+/*week one*/
+
+div.week_one {
+    background-color: #D9D7CC;
+    color: #0D0D0D;
+    border: 2px solid #0D0D0D;
+    }
+
+table.data  {
+    border-collapse: collapse;
+    }
+
+table, td, th {
+    width: 100%;
+    border: 1px solid;
+    text-align: left;
+    color: #0D0D0D
+    }
+
+.zebra  {
+    background-color: #dddddd;
+    color: #666666;
+    }
+
+
+#disclaimer {
+	font-size:12px;
+	font-weight:bold;
+	color:#000088;
+    }
+
+    
+#hideButton { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;
+    }
+
+#showButton { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;
+    }
+
+#toggleButton { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;}
+
+    
+#toggleButton2 { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;}
+
+
+
+#toggleButton3 { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;}
+    
+#testDiv    {
+    position: relative;
+    width:150px;
+    height:100px;
+    margin: 10px;
+    padding: 20px;
+    background: #322E3D;
+    border: 1px solid #000000;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+#testDiv2    {
+    position: relative;
+    width:150px;
+    height:100px;
+    margin: 10px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    font-size: 12pt;
+    cursor: pointer;
+    }
+    
+
+#TestDiv3   {
+    position: relative;
+    width:50px;
+    height:50px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.heartbutt  {
+    position: relative;
+    text-align: center;
+    width:100px;
+    height:50px;
+}
+
+
+    
+
+@media (min-width: 35em)    {
+
+    div.week_one
+     {
+        background-color: #D9D7CC;
+        color: #0D0D0D;
+        border: 2px solid #0D0D0D;
+
+    }
+    table.data  {
+        border-collapse: collapse;
+    }
+    
+    table, td, th {
+        width: 100%;
+        border: 1px solid;
+        text-align: left;
+        color: #0D0D0D
+    }
+    .zebra  {
+        background-color: #dddddd;
+        color: #666666;
+    
+    }
+        
+    #disclaimer {
+        font-size:12px;
+        font-weight:bold;
+        color:#000088;
+    }
+
+        
+    #hideButton { 
+        background:#0D0D0D;
+        color:#ffffff;
+        font-size:10px;
+        padding:15px;
+    }
+
+    #showButton { 
+        background:#0D0D0D;
+        color:#ffffff;
+        font-size:10px;
+        padding:15px;
+    }
+
+    #toggleButton { 
+        background:#0D0D0D;
+        color:#ffffff;
+        font-size:10px;
+        padding:15px;
+    }
+
+    
+    #toggleButton2 { 
+        background:#0D0D0D;
+        color:#ffffff;
+        font-size:10px;
+        padding:15px;
+    }  
+
+    #toggleButton3 { 
+        background:#0D0D0D;
+        color:#ffffff;
+        font-size:10px;
+        padding:15px;
+    }
+
+    #testDiv    {
+        position: relative;
+        width:150px;
+        height:100px;
+        margin: 10px;
+        padding: 20px;
+        background: #322E3D;
+        border: 1px solid #000000;
+        font-size: 12pt;
+        cursor: pointer;
+    }
+
+    #testDiv2    {
+        position: relative;
+        width:150px;
+        height:100px;
+        margin: 10px;
+        padding: 20px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        font-size: 12pt;
+        cursor: pointer;
+        }
+
+    #TestDiv3   {
+        position: relative;
+        width:50px;
+        height:50px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+        cursor: pointer;
+        
+        }
+
+      
+        
+};
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 50em)    {
+
+    div.week_one    {
+    background-color: #D9D7CC;
+    color: #0D0D0D;
+    border: 2px solid #0D0D0D;
+    }
+
+    table.data  {
+    border-collapse: collapse;
+    }
+
+    table, td, th {
+    width: 100%;
+    border: 1px solid;
+    text-align: left;
+    color: #0D0D0D
+    }
+    
+    .zebra  {
+    background-color: #dddddd;
+    color: #666666;
+    }
+        
+    #disclaimer {
+    font-size:12px;
+    font-weight:bold;
+    color:#000088;
+    }
+        
+    #hideButton { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;
+    }
+
+    #showButton { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;
+    }
+
+    #toggleButton { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;
+    }
+ 
+    #toggleButton2 { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;
+    }    
+
+    #toggleButton3 { 
+    background:#0D0D0D;
+    color:#ffffff;
+    font-size:10px;
+    padding:15px;
+    }
+
+    #testDiv    {
+    position: relative;
+    width:150px;
+    height:100px;
+    margin: 10px;
+    padding: 20px;
+    background: #322E3D;
+    border: 1px solid #000000;
+    font-size: 12pt;
+    cursor: pointer;
+    }
+
+    #testDiv2    {
+        position: relative;
+        width:150px;
+        height:100px;
+        margin: 10px;
+        padding: 20px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        font-size: 12pt;
+        cursor: pointer;
+        }
+
+    #TestDiv3   {
+        position: relative;
+        width:50px;
+        height:50px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+        cursor: pointer;
+        
+        }
+      
+    };
+    
+        
+        
+        
+
+
+/*base*/
+
+@media (min-width: 35em)    {
+
+    
+
+}
+
+@media (min-width: 50em)    {
+
+}
+
