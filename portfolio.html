@@ -2,73 +2,159 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="wwaeckerle">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" href="/CSS/portstyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
         <title>Waeckerle Project</title>
     </head>
     <body>
 
-
         <!--header section below-->
     <header id="header" class="page-header">
             <div id="wwlogo" class="logo">
-                <img src="assets/logo/logo.svg"  alt="logo" >
+                <img src="/assets/logo/logo.svg"  alt="logo" >
             </div>
     </header>
-
 
         <!--navigation section below-->
     <nav class="menu" id="main-menu">
         <button class="menu-toggle" id="toggle-menu" type="button">
-            menu
+            <p>menu</p>
         </button>
                 <div class="menu-dropdown">
                     <ul class="nav-menu">
-                        <li><a href="index.html">
+                        <li><a href="/index.html">
                             HOME</a></li>
-                        <li><a href="contact.html">
+                        <li><a href="/contact.html">
                             CONTACT</a></li>
-                        <li><a href="about.html">
-                            ABOUT</a></li>
-                        <li><a href="portfolio.html">
+                        <li><a href="/portfolio.html">
                             PORTFOLIO</a></li>
                     </ul>
                 </div>
-     </nav>
-
-        <!--hero image section below-->
-        <div class="hero">
-            <img class= "home-hero" alt="heroimage_home" src="assets/homehero/homehero-mobile.svg"> 
-        </div>
+    </nav>
 
         <!-- main section below -->
-        <main id="main">
+    <main id="main">
+        <div class="row_one">
+            <section id="section_one" >    
+                <div id="exampleOne" class="week_one">
+                    <h1>Web 238 Projects</h1>
 
-            <div class="row_one">
-                <section id="section_one" class="column">
-                    <p>section 1</p>
-                </section>
-            </div>
+                    <p id="disclaimer">
+                        Disclaimer! This service is not intended for the those with criminal intent. Celebrities are kind of like people so their privacy should be respected.
+                    </p>
+                    <p id="disclaimer2">
+                        Disclaimer! This service is not intended for the those with criminal intent. Celebrities are kind of like people so their privacy should be respected.
+                    </p>
+
+                    <p id="no-script">
+                        We recommend that you have JavaScript enabled!
+                    </p> 
+
+                      <input type="button" id="hideButton" value="Hide Disclaimer" />
+                      <br>
+                      <input type="button" id="showButton" value="Show Disclaimer" />
+                      <br>
+                      <input type="button" id="toggleButton" value="Toggle Button For Disclaimer" />
+                      <br>
+                      <input type="button" id="toggleButton2" value="Toggle Button 2" />
+                      <br>
+                      <input type="button" id="toggleButton3" value="Hide Disclaimer" />
+                      <br>
+
+
+                    <p> 
+                        <input type="text" placeholder="Add" id="search">
+                        <button id="button">Add</button>
+                    </p>
+                        
+                    <table class="data" id="groceries">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Cold</th>
+                            <th>Completed</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                            <td class="name" id="Name"></td>
+                            <td class="cold" id="Cold">
+                                <input type="checkbox" id="CheckBox" name="colditem" value="ColdItem">
+                            </td>
+                            <td class="completed" id="Complete">
+                                <input type="checkbox" id="CheckBox" name="completeitem" value="CompleteItem">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name" id="Name"></td>
+                            <td class="cold" id="Cold">
+                                <input type="checkbox" id="CheckBox" name="colditem" value="ColdItem">
+                            </td>
+                            <td class="completed" id="Complete">
+                                <input type="checkbox" id="CheckBox" name="completeitem" value="CompleteItem">
+                            </td>
+                        <tr>
+                            <td class="name" id="Name"></td>
+                            <td class="cold" id="Cold">
+                                <input type="checkbox" id="CheckBox" name="colditem" value="ColdItem">
+                            </td>
+                            <td class="completed" id="Complete">
+                                    <input type="checkbox" id="CheckBox" name="completeitem" value="CompleteItem">
+                            </td>
+                        </tbody>
+                    </table>
+                       
+                </div>
+                <br>
+                <div id="exampleTwo" class="week_one">
+                    <div class="intro" id="Intro">
+                        <p id="animation"> Animation Intro</p>
+                        <button id="Go" type="button" class="introbutt">Watch Animation</button>
+                        <div id="testDiv" class="testdiv"></div>
+                    </div>
+                    
+                </div>
+                <br>
+                <div id="exampleThree" class="week_one">
+                    <div class="selectfilter" id="SelectFilters">
+                            <h3 class="selectors" id="Selectors">Selectors</h3>
+                            <p>The borders are added selectors and filters.</p>
+                        <div id="testDiv2" class="testdiv2"></div>
+                            <h3 class="filters" id="Filters">Filters</h3>
+                            <p>This is another example.</p>
+                    </div>
+                </div>
+                <br>
+            </section>
+        </div>
 
             <div class="row_two">
-                <section id="section_two" class="column">
-                    <p>section 2</p>
+                <section id="section2" class="column">
+                    <button id="Go1" type="button" class="heartbutt">Start Animation</button>
+                    <div id="TestDiv3" class="testdiv3">
+                        <img src="/assets/port/heart.png" alt="heartpic">
+                    </div>
+                    
+               
                 </section>
             </div>
 
+
+
+
             <div class="row_three">
-                <section id="section_three" class="column">
+                <section id="section3" class="column">
                     <p>section 3</p>
                 </section>
             </div>
-        </main>
+    </main>
 
-        <!-- footer section below -->
-        <footer class="page-footer">
+<!-- footer section below -->
+    <footer class="page-footer">
             <div class="footer-text">
                 <p>Questions? Comments? Please Contact: <br>
                     Email:<a href="mailto:wwaecker@stumail.jccc.edu">wwaecker@stumail.jccc.edu</a><br>
@@ -77,13 +163,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
                 </ul>
         </nav>
-        </footer>
-        <script src="JS/index.js"></script>
+    </footer>
+    <script src="/JS/portfolio.js"></script>
     </body>
 </html>
