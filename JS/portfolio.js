@@ -1,16 +1,4 @@
-$(document).ready(function(){
-    $('#groceries tbody tr:even').css({
-        'background-color':'#fff',
-        'color':'#D40000',
-        'font-size': '11pt',
-        'line-height': '2.5em'
-    });
-    });
-    
-    $(document).ready(function(){
-        $('#groceries tbody tr:even').addClass('zebra');
-    });
-    
+ 
     $(document).ready(function() {
         $('#hideButton').click(function(){
           $('#disclaimer').hide();
@@ -78,10 +66,7 @@ $(document).ready(function(){
     $(document).ready(function(){
       $('#no-script').remove();
     });
-    
-    $(document).ready(function(){
-      $('#groceries tr').remove(':contains("carrots")');
-    });
+
     
     // JQuery intro Example Animation//
     //Week One//
@@ -123,4 +108,51 @@ $(document).ready(function(){
         .animate({left: 100},200)  
         .animate({top:"+=20", borderWidth: 3}, "slow")
     });
+});
+
+
+
+ //Week Two//
+ 
+ //Animate the arrow get bigger//
+ $("document").ready(function() {
+  $("#Go2").click(function() {$("#TestDiv4")
+  .animate({width:"150px"}, 200);
+  });
+});
+
+ //Animate the arrow to move to the left//
+
+$("document").ready(function() {
+  $("#Go3").click(function() {$("#TestDiv4")
+  .animate({left: "300px"},1000,"swing");
+})
+});
+
+ //Animate the arrow to get bigger and move to the left//
+
+$("document").ready(function() {
+  $("#Go4").click(function() {$("#TestDiv4")
+  .animate({left: "300px", width:"150px"},1000,"swing");
+})
+});
+
+
+//Animate the square to fade in//
+
+$("document").ready(function() {
+  $("#Go5").click(function()  {$("#TestDiv5")
+  .fadeIn("normal");
+});
+  $("#Go6").click(function()  {$("#TestDiv5")
+  .fadeOut("normal");
+});
+
+$("#Go7").click(function() {$("#TestDiv5")
+              .fadeTo("fast", 0.3)
+              .fadeTo("fast", 1.0)
+              .fadeTo("fast", 0.3)
+              .fadeTo("fast", 1.0);
+});
+
 });
