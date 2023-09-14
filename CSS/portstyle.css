@@ -5,12 +5,6 @@ img    {
     width: 100%;
 }
 
-@media (min-width:50em) {
-    :root{
-        font: 1.125em;
-    }   
-}
-
 *,
 *::before,
 *::after  {
@@ -18,10 +12,32 @@ img    {
 }
 
 body    {
-    margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #fff;
 }
+
+
+@media (min-width:50em) {
+    :root{
+        font: 1.125em;
+    }  
+    img    {
+        width: 100%;
+    }
+
+    *,
+    *::before,
+    *::after  {
+        box-sizing: inherit;
+    }
+    
+    body    {
+        font-family: Helvetica, Arial, sans-serif;
+        background-color: #fff;
+    }
+
+};
+
 
 /*header*/
 
@@ -50,7 +66,7 @@ body    {
 
 .logo   {
     position: absolute;
-    top:1em;
+    top: 1em;
     left: 0.5em;
     bottom: 1em;    
 }
@@ -58,7 +74,7 @@ body    {
 @media (min-width: 35em)    {
     .logo{
     position: absolute;
-    top:1em;
+    top: 1em;
     left: 0.5em;
     bottom: 1em;
 }
@@ -68,7 +84,7 @@ body    {
 @media (min-width: 50em)    {
     .logo{
         position: absolute;
-        top:1em;
+        top: 1em;
         left: 0.5em;
         bottom: 1em;
     }
@@ -121,7 +137,8 @@ main a:active    {
 
 /*footer a links Menu*/
 
-footer a:link  {
+footer
+a:link  {
     color:#fff;
     text-decoration: none;
 }
@@ -193,6 +210,7 @@ footer a:active    {
         display: block;}
 
 }
+
 /*inside Nav Menu*/
 .nav-menu   {   
     margin: 0;
@@ -273,6 +291,7 @@ footer a:active    {
 .row_one    {
     display: flex;    
     padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
     border: 1px solid #0D0D0D; 
 
 }
@@ -286,114 +305,113 @@ footer a:active    {
 
 .row_three    {
     display: flex;    
-    padding: 2em 0em 2em 0em;
+    padding: 2em 0em 4em 0em;
+    font-family: 'Times New Roman', Times, serif;
     border: 1px solid #0D0D0D; 
 }
-.column     {
-    display: flex;
-    padding: 0em 1em 0em 1em;
-}
-.column_one     {
-    display: flex;
-    padding: 0em 1em 0em 1em;
-}
-.column_two     {
-    display: flex;
-    padding: 0em 1em 0em 1em;
-}
 
-footer  {
+.row_four    {
     display: flex;
-    text-align: left;
+    padding: 2em 0em 2em 0em;
     font-family: 'Times New Roman', Times, serif;
-    color:#fff;
-    text-indent: 0em;
+    color: #fff;
+    background-color: #0D0D0D;
 }
 
 
-
+.row_five   {
+    display: flex;    
+    padding: 2em 0em 4em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid #0D0D0D; 
+}
 
 @media (min-width:35em) {
     .main   { 
         background-color: #fff;
     }
     .row_one    {
+        display: flex;    
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        border: 1px solid #0D0D0D; 
+    
+    }
+    .row_two    {
         display: flex;
         padding: 2em 0em 2em 0em;
-    }
-
-   .row_two    {
-        display: flex;
-        padding: 2em 0em 2em 0em;
-    }
-
-    .row_three  {
-        display: flex;
-        padding: 2em 0em 2em 0em;
-    }
-
-    section.column     {
-        display: flex;
-        padding: 0em 1em 0em 1em;
-    }
-    .column_one     {
-        display: flex;
-        padding: 0em 1em 0em 1em;
-    }
-    .column_two     {
-        display: flex;
-        padding: 0em 1em 0em 1em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
     }
     
-    footer  {
-        display: flex;
-        text-align: left;
+    .row_three    {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
-        color:#fff;
-        text-indent: 0em;
+        border: 1px solid #0D0D0D; 
     }
+    
+
+    .row_four    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+        
+    .row_five   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        border: 1px solid #0D0D0D; 
+    }
+        
 }
 
 @media (min-width: 50em)    {
-    .main    {
+    .main   { 
         background-color: #fff;
     }
+        
     .row_one    {
+        display: flex;    
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        border: 1px solid #0D0D0D; 
+    
+    }
+    .row_two    {
         display: flex;
         padding: 2em 0em 2em 0em;
-    }
-
-   .row_two    {
-        display: flex;
-        padding: 2em 0em 2em 0em;
-    }
-
-    .row_three  {
-        display: flex;
-        padding: 2em 0em 2em 0em;
-    }
-
-    .column     {
-        display: flex;
-        padding: 0em 1em 0em 1em;
-    }
-    .column_one     {
-        display: flex;
-        padding: 0em 1em 0em 1em;
-    }
-    .column_two     {
-        display: flex;
-        padding: 0em 1em 0em 1em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
     }
     
-    footer  {
-        display: flex;
-        text-align: left;
+    .row_three    {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
-        color:#fff;
-        text-indent: 0em;
+        border: 1px solid #0D0D0D; 
     }
 
+
+    .row_four    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }   
+        
+    .row_five   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        border: 1px solid #0D0D0D; 
+    } 
 
 }
 
@@ -406,47 +424,118 @@ footer.page-footer  {
     background-color: #0D0D0D;
 }
 
+footer  {
+    display: flex;
+    text-align: right;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+    text-indent: 0em;
+}
+
+footer
+ul.nav-menu   {   
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color:#0D0D0D;
+
+}
+
+footer 
+ul.nav-menu> li + li  {
+    border:0;
+}
+
+footer
+ul.nav-menu > li > a   {   
+    display: block;
+    padding: 0.8em 1em;
+    color: #fff;
+    font-weight: normal;
+}
+
+
 @media (min-width: 35em)    {
+    footer  {
+        display: flex;
+        text-align: right;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        color:#fff;
+        text-indent: 0em;
+    }
+
     footer.page-footer  {
         padding:2em 1em 1em 2em;
         background-color: #0D0D0D;
     }
+ 
+    footer
+    ul.nav-menu   {   
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        background-color:#0D0D0D;
+    }
+
+    footer 
+    ul.nav-menu> li + li  {
+        border:0;
+    }
+
+    footer
+    ul.nav-menu > li > a   {   
+        display: block;
+        padding: 0.8em 1em;
+        color: #fff;
+        font-weight: normal;
+    }
+
 }
 
 @media (min-width: 50em)    {
+    footer  {
+        display: flex;
+        text-align: right;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        color:#fff;
+        text-indent: 0em;
+    }
+
     footer.page-footer  {
         padding:2em 1em 1em 2em;
         background-color: #0D0D0D;
     }
+
+    footer
+    ul.nav-menu   {   
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        background-color:#0D0D0D;
+    }
+    
+    footer 
+    ul.nav-menu> li + li  {
+        border:0;
+
+    }
+    
+    footer
+    ul.nav-menu > li > a   {   
+        display: block;
+        padding: 0.8em 0em .8em 5em;
+        color: #fff;
+        font-weight: normal;
+    }
+    
     
 }
 
 
 /*week one*/
-
-div.week_one {
-    background-color: #D9D7CC;
-    color: #0D0D0D;
-    border: 2px solid #0D0D0D;
-    }
-
-table.data  {
-    border-collapse: collapse;
-    }
-
-table, td, th {
-    width: 100%;
-    border: 1px solid;
-    text-align: left;
-    color: #0D0D0D
-    }
-
-.zebra  {
-    background-color: #dddddd;
-    color: #666666;
-    }
-
-
 #disclaimer {
 	font-size:12px;
 	font-weight:bold;
@@ -498,6 +587,7 @@ table, td, th {
     background: #322E3D;
     border: 1px solid #000000;
     font-size: 12pt;
+    left: 100px;
     cursor: pointer;
 }
 
@@ -510,6 +600,7 @@ table, td, th {
     background: #ffffff;
     border: 1px solid #000000;
     font-size: 12pt;
+    left: 100px;
     cursor: pointer;
     }
     
@@ -518,8 +609,9 @@ table, td, th {
     position: relative;
     width:50px;
     height:50px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     padding: 10px;
+    left: 100px;
     cursor: pointer;
 
 }
@@ -529,35 +621,46 @@ table, td, th {
     text-align: center;
     width:100px;
     height:50px;
+    left: 50px;
+}
+    
+/*Week Two*/
+
+#TestDiv4   {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+   
+}
+
+button.butt { 
+    position: relative;
+    text-align:center;
+    width:100px;
+    height:50px;
+    margin: 5pt 5pt 5pt 5pt;        
+    }
+
+#TestDiv5   {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+  
 }
 
 
-    
+
 
 @media (min-width: 35em)    {
 
-    div.week_one
-     {
-        background-color: #D9D7CC;
-        color: #0D0D0D;
-        border: 2px solid #0D0D0D;
-
-    }
-    table.data  {
-        border-collapse: collapse;
-    }
-    
-    table, td, th {
-        width: 100%;
-        border: 1px solid;
-        text-align: left;
-        color: #0D0D0D
-    }
-    .zebra  {
-        background-color: #dddddd;
-        color: #666666;
-    
-    }
         
     #disclaimer {
         font-size:12px;
@@ -611,6 +714,7 @@ table, td, th {
         background: #322E3D;
         border: 1px solid #000000;
         font-size: 12pt;
+        left: 100px;
         cursor: pointer;
     }
 
@@ -623,6 +727,7 @@ table, td, th {
         background: #ffffff;
         border: 1px solid #000000;
         font-size: 12pt;
+        left: 100px;
         cursor: pointer;
         }
 
@@ -630,54 +735,56 @@ table, td, th {
         position: relative;
         width:50px;
         height:50px;
-        margin: 10px 10px 10px 10px;
-        padding: 10px;
+        margin: 10px;
+        left: 100px;
         cursor: pointer;
         
         }
 
-      
+    .heartbutt  {
+        position: relative;
+        text-align: center;
+        width:100px;
+        height:50px;
+        left: 100px;
+        }
+
+    #TestDiv4   {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        padding: 20px;
+        left: 100px;
+        cursor: pointer; 
+        }
         
+    button.butt {  
+        position: relative;
+        text-align:center;
+        width:100px;
+        height:50px;
+        margin: 5pt 5pt 5pt 5pt;
+        }
+        
+        
+    #TestDiv5{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        padding: 20px;
+        left: 100px;
+        cursor: pointer;       
+        }
 };
         
 
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 50em)    {
 
-    div.week_one    {
-    background-color: #D9D7CC;
-    color: #0D0D0D;
-    border: 2px solid #0D0D0D;
-    }
-
-    table.data  {
-    border-collapse: collapse;
-    }
-
-    table, td, th {
-    width: 100%;
-    border: 1px solid;
-    text-align: left;
-    color: #0D0D0D
-    }
-    
-    .zebra  {
-    background-color: #dddddd;
-    color: #666666;
-    }
-        
     #disclaimer {
     font-size:12px;
     font-weight:bold;
@@ -728,32 +835,72 @@ table, td, th {
     background: #322E3D;
     border: 1px solid #000000;
     font-size: 12pt;
+    left: 100px;
     cursor: pointer;
     }
 
     #testDiv2    {
-        position: relative;
-        width:150px;
-        height:100px;
-        margin: 10px;
-        padding: 20px;
-        background: #ffffff;
-        border: 1px solid #000000;
-        font-size: 12pt;
-        cursor: pointer;
-        }
+    position: relative;
+    width:150px;
+    height:100px;
+    margin: 10px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    font-size: 12pt;
+    left: 100px;
+    cursor: pointer;
+    }
 
     #TestDiv3   {
-        position: relative;
-        width:50px;
-        height:50px;
-        margin: 10px 10px 10px 10px;
-        padding: 10px;
-        cursor: pointer;
+    position: relative;
+    width:50px;
+    height:50px;
+    margin: 10px;
+    padding: 10px;
+    left: 100px;
+    cursor: pointer;
         
-        }
-      
-    };
+    }
+    
+    .heartbutt  {
+    position: relative;
+    text-align: center;
+    width:100px;
+    height:50px;
+    left: 100px;
+    }
+    
+   
+    #TestDiv4   {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+    }
+
+    button.butt {  
+    position: relative;
+    text-align: center;
+    width:100px;
+    height:50px;
+    margin: 5pt 5pt 5pt 5pt;       
+    }
+
+    #TestDiv5{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+    }
+
+}
     
         
         
