@@ -16,6 +16,70 @@ body    {
     background-color: #fff;
 }
 
+/*header*/
+
+.page-header    {
+    padding:2em 1em 1em 2em;
+    background-color: #0D0D0D;
+}
+
+/*LOGO*/
+
+.logo   {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    bottom: 1em;    
+}
+
+
+/*hero image section*/
+.hero   {
+    background-size: 100%;
+}
+
+
+@media (min-width:35em) {
+    :root{
+        font: 1.125em;
+    }  
+    img    {
+        width: 100%;
+    }
+
+    *,
+    *::before,
+    *::after  {
+        box-sizing: inherit;
+    }
+    
+    body    {
+        font-family: Helvetica, Arial, sans-serif;
+        background-color: #fff;
+    }
+
+    /*header*/
+    .page-header    {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+        
+    /**LOGO**/
+    .logo{
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        bottom: 1em;
+    }
+        
+    /*hero image section*/
+    .hero   {
+        background-size: 100%;
+    }
+
+    }
+
+
 
 @media (min-width:50em) {
     :root{
@@ -35,124 +99,47 @@ body    {
         font-family: Helvetica, Arial, sans-serif;
         background-color: #fff;
     }
-
-};
-
-
-/*header*/
-
-.page-header    {
-    padding:2em 1em 1em 2em;
-    background-color: #0D0D0D;
-}
-
-@media (min-width:35em) {
+    /*header*/
     .page-header    {
         padding:2em 1em 1em 2em;
         background-color: #0D0D0D;
     }
-}
-
-@media (min-width:50em) {
-    .page-header    {
-        padding:2em 1em 1em 2em;
-        background-color: #0D0D0D;
-
-    }
-}
-
-
-/**LOGO**/
-
-.logo   {
-    position: absolute;
-    top: 1em;
-    left: 0.5em;
-    bottom: 1em;    
-}
-
-@media (min-width: 35em)    {
-    .logo{
-    position: absolute;
-    top: 1em;
-    left: 0.5em;
-    bottom: 1em;
-}
-
-}
-
-@media (min-width: 50em)    {
+        
+    /**LOGO**/
     .logo{
         position: absolute;
         top: 1em;
-        left: 0.5em;
+        left: 1em;
         bottom: 1em;
+        }
+        
+    /*hero image section*/
+    .hero   {
+        background-size: 100%;
     }
-    
-    
-}
+};
+
 
 /****Navigation Section****/
 
 
-/*header navigation a:links*/
+/* navigation a:links*/
 
-.nav-menu a:link  {
+nav.nav-menu a:link  {
     color:#fff;
     text-decoration: none;
 }
 
-.nav-menu a:visited   {
+nav.nav-menu a:visited   {
     color: #fff;
 }
 
-.nav-menu a:hover   {
+nav.nav-menu a:hover   {
     text-decoration: underline;
     color: #322E3D;
 }
 
-.nav-menu a:active    {
-    color: #322E3D;
-}
-
-/*main a links Menu*/
-
-main a:link  {
-    color:#0D0D0D;
-    text-decoration: underline;
-}
-
-main a:visited   {
-    color: #0D0D0D;
-}
-
-main a:hover   {
-    text-decoration: underline;
-    color: #322E3D;
-}
-
-main a:active    {
-    color: #322E3D;
-}
-
-/*footer a links Menu*/
-
-footer
-a:link  {
-    color:#fff;
-    text-decoration: none;
-}
-
-footer a:visited   {
-    color: #fff;
-}
-
-footer a:hover   {
-    text-decoration: underline;
-    color: #322E3D;
-}
-
-footer a:active    {
+nav.nav-menu a:active    {
     color: #322E3D;
 }
 
@@ -262,24 +249,6 @@ footer a:active    {
 }
 
 
-/*hero image section*/
-.hero   {
-    background-size: 100%;
-}
-
-@media (min-width:35em) {
-    .hero   {
-        background-size: 100%;
-    }
-}
-
-@media (min-width: 50em)    {
-    .hero   {
-        background-size: 100%;
-    }
-}
-
-
 
 /* Main Section */
 
@@ -292,7 +261,6 @@ footer a:active    {
     display: flex;    
     padding: 2em 0em 2em 0em;
     font-family: 'Times New Roman', Times, serif;
-    border: 1px solid #0D0D0D; 
 
 }
 .row_two    {
@@ -307,7 +275,6 @@ footer a:active    {
     display: flex;    
     padding: 2em 0em 4em 0em;
     font-family: 'Times New Roman', Times, serif;
-    border: 1px solid #0D0D0D; 
 }
 
 .row_four    {
@@ -323,8 +290,55 @@ footer a:active    {
     display: flex;    
     padding: 2em 0em 4em 0em;
     font-family: 'Times New Roman', Times, serif;
-    border: 1px solid #0D0D0D; 
 }
+
+.row_six    {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #0D0D0D;
+}
+
+.row_seven   {
+    display: flex;    
+    padding: 2em 0em 4em 0em;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.row_eight  {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #0D0D0D;
+}
+
+.row_nine   {
+    display: flex;    
+    padding: 2em 0em 4em 0em;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+/*main a links Menu*/
+
+    main a:link  {
+        color:#0D0D0D;
+        text-decoration: underline;
+    }
+
+    main a:visited   {
+        color: #0D0D0D;
+    }
+
+    main a:hover   {
+        text-decoration: underline;
+        color: #322E3D;
+    }
+
+    main a:active    {
+        color: #322E3D;
+    }
 
 @media (min-width:35em) {
     .main   { 
@@ -334,7 +348,6 @@ footer a:active    {
         display: flex;    
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
-        border: 1px solid #0D0D0D; 
     
     }
     .row_two    {
@@ -349,7 +362,6 @@ footer a:active    {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
-        border: 1px solid #0D0D0D; 
     }
     
 
@@ -365,10 +377,57 @@ footer a:active    {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
-        border: 1px solid #0D0D0D; 
     }
+
+    .row_six    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+
+    .row_seven   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+
+    .row_eight  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+
+    .row_nine   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
         
-}
+    /*main a links Menu*/
+
+    main a:link  {
+        color:#0D0D0D;
+        text-decoration: underline;
+    }
+
+    main a:visited   {
+        color: #0D0D0D;
+    }
+
+    main a:hover   {
+        text-decoration: underline;
+        color: #322E3D;
+    }
+
+    main a:active    {
+        color: #322E3D;
+    }
+            
+    }
 
 @media (min-width: 50em)    {
     .main   { 
@@ -379,7 +438,6 @@ footer a:active    {
         display: flex;    
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
-        border: 1px solid #0D0D0D; 
     
     }
     .row_two    {
@@ -394,7 +452,6 @@ footer a:active    {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
-        border: 1px solid #0D0D0D; 
     }
 
 
@@ -410,8 +467,54 @@ footer a:active    {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
-        border: 1px solid #0D0D0D; 
     } 
+
+    .row_six    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+    .row_seven   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+    
+    .row_eight  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+
+    .row_nine   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+    
+    /*main a links Menu*/
+
+    main a:link  {
+        color:#0D0D0D;
+        text-decoration: underline;
+    }
+
+    main a:visited   {
+        color: #0D0D0D;
+    }
+
+    main a:hover   {
+        text-decoration: underline;
+        color: #322E3D;
+    }
+
+    main a:active    {
+        color: #322E3D;
+    }
 
 }
 
@@ -426,7 +529,7 @@ footer.page-footer  {
 
 footer  {
     display: flex;
-    text-align: right;
+    text-align: left;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     color:#fff;
@@ -450,16 +553,40 @@ ul.nav-menu> li + li  {
 footer
 ul.nav-menu > li > a   {   
     display: block;
-    padding: 0.8em 1em;
+    padding:2em;
     color: #fff;
     font-weight: normal;
 }
 
 
+/*footer a links Menu*/
+
+footer
+a:link  {
+    color:#fff;
+    text-decoration: none;
+}
+
+footer 
+a:visited   {
+    color: #fff;
+}
+
+footer 
+a:hover   {
+    text-decoration: underline;
+    color: #322E3D;
+}
+
+footer
+a:active    {
+    color: #322E3D;
+}
+
 @media (min-width: 35em)    {
     footer  {
         display: flex;
-        text-align: right;
+        text-align: left;
         text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:#fff;
@@ -486,10 +613,34 @@ ul.nav-menu > li > a   {
 
     footer
     ul.nav-menu > li > a   {   
-        display: block;
-        padding: 0.8em 1em;
+        display:block;
+        padding: 2em;
         color: #fff;
         font-weight: normal;
+    }
+    
+    /*footer a links Menu*/
+
+    footer
+    a:link  {
+        color:#fff;
+        text-decoration: none;
+    }
+
+    footer 
+    a:visited   {
+        color: #fff;
+    }
+
+    footer 
+    a:hover   {
+        text-decoration: underline;
+        color: #322E3D;
+    }
+
+    footer
+    a:active    {
+        color: #322E3D;
     }
 
 }
@@ -497,7 +648,7 @@ ul.nav-menu > li > a   {
 @media (min-width: 50em)    {
     footer  {
         display: flex;
-        text-align: right;
+        text-align: left;
         text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:#fff;
@@ -526,11 +677,34 @@ ul.nav-menu > li > a   {
     footer
     ul.nav-menu > li > a   {   
         display: block;
-        padding: 0.8em 0em .8em 5em;
+        padding: 2em;
         color: #fff;
         font-weight: normal;
     }
-    
+        
+    /*footer a links Menu*/
+
+    footer
+    a:link  {
+        color:#fff;
+        text-decoration: none;
+    }
+
+    footer 
+    a:visited   {
+        color: #fff;
+    }
+
+    footer 
+    a:hover   {
+        text-decoration: underline;
+        color: #322E3D;
+    }
+
+    footer
+    a:active    {
+        color: #322E3D;
+    }
     
 }
 
@@ -540,7 +714,7 @@ ul.nav-menu > li > a   {
 	font-size:12px;
 	font-weight:bold;
 	color:#000088;
-    }
+}
 
     
 #hideButton { 
@@ -548,35 +722,35 @@ ul.nav-menu > li > a   {
     color:#ffffff;
     font-size:10px;
     padding:15px;
-    }
+}
 
 #showButton { 
     background:#0D0D0D;
     color:#ffffff;
     font-size:10px;
     padding:15px;
-    }
+}
 
 #toggleButton { 
     background:#0D0D0D;
     color:#ffffff;
     font-size:10px;
-    padding:15px;}
-
+    padding:15px;
+}
     
 #toggleButton2 { 
     background:#0D0D0D;
     color:#ffffff;
     font-size:10px;
-    padding:15px;}
-
-
+    padding:15px;
+}
 
 #toggleButton3 { 
     background:#0D0D0D;
     color:#ffffff;
     font-size:10px;
-    padding:15px;}
+    padding:15px;
+}
     
 #testDiv    {
     position: relative;
@@ -602,7 +776,7 @@ ul.nav-menu > li > a   {
     font-size: 12pt;
     left: 100px;
     cursor: pointer;
-    }
+}
     
 
 #TestDiv3   {
@@ -613,15 +787,6 @@ ul.nav-menu > li > a   {
     padding: 10px;
     left: 100px;
     cursor: pointer;
-
-}
-
-.heartbutt  {
-    position: relative;
-    text-align: center;
-    width:100px;
-    height:50px;
-    left: 50px;
 }
     
 /*Week Two*/
@@ -641,9 +806,8 @@ button.butt {
     position: relative;
     text-align:center;
     width:100px;
-    height:50px;
-    margin: 5pt 5pt 5pt 5pt;        
-    }
+    height:50px;        
+}
 
 #TestDiv5   {
     position: relative;
@@ -653,8 +817,60 @@ button.butt {
     padding: 20px;
     left: 100px;
     cursor: pointer; 
-  
 }
+
+#TestDiv6  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+}
+
+#TestDiv7  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+}
+
+
+#TestDiv8  {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer; 
+}
+
+.toggler    {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer; 
+}
+
+#TestDiv9   {
+    position: relative;
+    height: 400px;
+    width:400px;
+    margin:10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 
@@ -741,14 +957,6 @@ button.butt {
         
         }
 
-    .heartbutt  {
-        position: relative;
-        text-align: center;
-        width:100px;
-        height:50px;
-        left: 100px;
-        }
-
     #TestDiv4   {
         position: relative;
         height: 100px;
@@ -759,26 +967,71 @@ button.butt {
         cursor: pointer; 
         }
         
-    button.butt {  
+    button.butt { 
         position: relative;
         text-align:center;
         width:100px;
-        height:50px;
-        margin: 5pt 5pt 5pt 5pt;
+        height:50px;        
         }
-        
-        
-    #TestDiv5{
+
+    #TestDiv5   {
         position: relative;
         height: 100px;
         width: 100px;
         margin: 10px;
         padding: 20px;
         left: 100px;
-        cursor: pointer;       
-        }
+        cursor: pointer;    
+    }
+
+    #TestDiv6  {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        padding: 20px;
+        left: 100px;
+        cursor: pointer; 
+    }
+
+    #TestDiv7  {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        padding: 20px;
+        left: 100px;
+        cursor: pointer;   
+    }
+    
+    #TestDiv8  {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+        padding: 20px;
+        cursor: pointer;  
+    }
+
+    .toggler    {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+        padding: 20px;
+        cursor: pointer; 
+    }
+
+    #TestDiv9   {
+        position: relative;
+        height: 400px;
+        width:400px;
+        margin:10px;
+        padding: 20px;
+        cursor: pointer;
+    }  
+    
 };
-        
 
 
 
@@ -859,18 +1112,8 @@ button.butt {
     margin: 10px;
     padding: 10px;
     left: 100px;
-    cursor: pointer;
-        
+    cursor: pointer;    
     }
-    
-    .heartbutt  {
-    position: relative;
-    text-align: center;
-    width:100px;
-    height:50px;
-    left: 100px;
-    }
-    
    
     #TestDiv4   {
     position: relative;
@@ -881,16 +1124,15 @@ button.butt {
     left: 100px;
     cursor: pointer; 
     }
-
-    button.butt {  
+   
+    button.butt { 
     position: relative;
-    text-align: center;
+    text-align:center;
     width:100px;
-    height:50px;
-    margin: 5pt 5pt 5pt 5pt;       
+    height:50px;        
     }
 
-    #TestDiv5{
+    #TestDiv5   {
     position: relative;
     height: 100px;
     width: 100px;
@@ -900,7 +1142,54 @@ button.butt {
     cursor: pointer; 
     }
 
-}
+    #TestDiv6  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+    }
+
+    #TestDiv7  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+    }
+
+    #TestDiv8  {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer; 
+    }
+    
+    .toggler    {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer; 
+    }
+    
+    #TestDiv9   {
+    position: relative;
+    height: 400px;
+    width:400px;
+    margin:10px;
+    padding: 20px;
+    cursor: pointer;
+    }
+    
+    };
     
         
         
