@@ -138,7 +138,7 @@ $("document").ready(function() {
 });
 
 
-//Animate the square to fade in//
+//Animate the square to fade in, fade out, and pulse//
 
 $("document").ready(function() {
   $("#Go5").click(function()  {$("#TestDiv5")
@@ -147,12 +147,62 @@ $("document").ready(function() {
   $("#Go6").click(function()  {$("#TestDiv5")
   .fadeOut("normal");
 });
-
-$("#Go7").click(function() {$("#TestDiv5")
+  $("#Go7").click(function() {$("#TestDiv5")
               .fadeTo("fast", 0.3)
               .fadeTo("fast", 1.0)
               .fadeTo("fast", 0.3)
               .fadeTo("fast", 1.0);
 });
+});
 
+
+//Animate the square to show, hide, and toggle.//
+$("document").ready(function(){
+  $("#Go8").click(function()  
+  {$("#TestDiv6").show("normal");
+});
+$("#Go9").click(function()  
+{$("#TestDiv6").hide(1000,"swing");
+});
+$("#Go10").click(function()  
+{$("#TestDiv6").toggle("normal");
+});
+
+
+});
+
+
+//Animate the square to slide up, slide down, and toggle slide.//
+$("document").ready(function(){
+  $("#Go11").click(function()  
+  {$("#TestDiv7").slideUp(1000);
+});
+$("#Go12").click(function()  
+{$("#TestDiv7").slideDown(200);
+});
+$("#Go13").click(function()  
+{$("#TestDiv7").slideToggle("normal");
+});
+
+});
+
+//Animate the color of the square//
+$("document").ready(function(){
+let state = true;
+$("#Go14").on("click" , function(){
+if(state){
+$("#TestDiv8").animate({
+  backgroundColor:"#aa0000",
+  height:400,
+  width: 400
+  } , 1000);
+} else  {
+  $("#TestDiv8").animate({
+    backgroundColor:"#000",
+    height: 400,
+    width: 700
+  } , 1000);
+  }
+  state = !state;
+});
 });
