@@ -7,7 +7,8 @@
         <meta name="author" content="wwaeckerle">
         <link rel="stylesheet" type="text/css" href="CSS/portstyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <title>Waeckerle Project</title>
     </head>
     <body>
@@ -35,11 +36,11 @@
                     </ul>
                 </div>
     </nav>
-<!-- main section below -->
+    <!-- main section below -->
          <main id="main">
         <div class="row_one">
             <section id="Section_One" >    
-                <div id="exampleOne" class="week_one">
+                <div id="exampleOne">
                     <h1>Web 238 Projects</h1>
                     <p id="disclaimer">
                         Disclaimer! This service is not intended for the those with criminal intent. Celebrities are kind of like people so their privacy should be respected.
@@ -66,7 +67,7 @@
 
                 <br>
 
-                <div id="exampleThree" class="week_one">
+                <div id="exampleThree">
                     <div class="selectfilter" id="SelectFilters">
                             <h3 class="selectors" id="Selectors">Selectors</h3>
                             <p>The borders are added selectors and filters.</p>
@@ -78,7 +79,7 @@
                 
                 <br>
 
-                <div id="exampleTwo" class="week_one">
+                <div id="exampleTwo">
                     <div class="intro" id="Intro">
                         <p id="animation"> Animation Intro</p>
                         <button id="Go" type="button" class="introbutt">Watch Animation</button>
@@ -87,19 +88,16 @@
                     
                 </div>
             </section>
-
         </div>
-
         <div class="row_two">
             <section id="Section_Two">
-                    <button id="Go1" type="button" class="heartbutt">Start Animation</button>
+                    <button id="Go1" type="button" class="butt">Start Animation</button>
                     <div id="TestDiv3" class="testdiv3">
                         <img src="assets/port/heart.png" alt="heartpic">
                     </div>
                     <br>
             </section>
         </div>
-
         <div class="row_three">
             <section id="Section_Three">
                 <button class="butt" id="Go2" type="button">Grow Arrow</button>
@@ -112,7 +110,6 @@
                 <br>
             </section>
         </div>
-
         <div class="row_four">
             <section id="Section_Four">
                 <div>
@@ -130,29 +127,71 @@
         <div class="row_five">
             <section id="Section_Five">
                 <div>
-
+                    <button class="butt" id="Go8" type="button">Show</button>
+                    <button class="butt" id="Go9" type="button">Hide</button>
+                    <button class="butt" id="Go10" type="button">Toggle</button>
                 </div>
+                <div id="TestDiv6" class="testdiv6">
+                    <img src="assets/port/testdiv5.png" alt="square">
+                </div>
+            </section>
+        </div>
+        <div class="row_six">
+            <section id="Section_Six">
+                <div>
+                    <button class="butt" id="Go11" type="button">Slide Up</button>
+                    <button class="butt" id="Go12" type="button">Slide Down</button>
+                    <button class="butt" id="Go13" type="button">Toggle Slide</button>
+                </div>
+                <div id="TestDiv7" class="testdiv7">
+                    <img src="assets/port/testdiv5.png" alt="square">
+                </div>
+            </section>
+        </div>
+        <div class="row_seven">
+            <section id="Section_Seven">
+                <button class="butt" id="Go14" type="button">Watch Animation</button>
+                <div class="toggler">
+                <div id="TestDiv8" class="testdiv8"></div>
+                </div>
+            </section>
+        </div>
+        <div class="row_eight">
+            <section id="Section_Eight">
+                <button class="butt" id="Go15" type="button">Watch Animation</button>
+                <div class="toggler">
+                <div id="TestDiv9" class="testdiv9"></div>
+                </div>
+            </section>
+        </div>
+        <div class="row_nine">
+            <section id="Section_Nine">
+
             </section>
         </div>
 
 
     </main>
-  
+
 <!-- footer section below -->
     <footer class="page-footer">
             <div class="footer-text">
-                <p>Questions? Comments? Please Contact: <br>
+                <p>Questions? Comments?<br>
+                    Contact: <br>
                     Email:<a href="mailto:wwaecker@stumail.jccc.edu">wwaecker@stumail.jccc.edu</a><br>
                     Phone: (555)-555-5555 
                 </p>
             </div>
-        <nav class="menu" id="main-menu">
-             <ul class="nav-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-        </nav>
+            <nav class="menu" id="main-menu">
+                            <ul class="nav-menu">
+                                <li><a href="index.html">
+                                    HOME</a></li>
+                                <li><a href="contact.html">
+                                    CONTACT</a></li>
+                                <li><a href="portfolio.html">
+                                    PORTFOLIO</a></li>
+                            </ul>
+            </nav>
     </footer>
     <script src="JS/portfolio.js"></script>
     </body>
