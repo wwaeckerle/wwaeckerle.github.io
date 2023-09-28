@@ -206,3 +206,49 @@ $("#TestDiv8").animate({
   state = !state;
 });
 });
+
+
+//Animate one image to fade onto the other//
+$(document).ready(function()  {
+  $('#fader').hover(function()  {
+  $(this).find('img:eq(1)').stop(true,true).fadeIn();
+}, function(){
+  $(this).find('img:eq(1)').fadeOut();
+})
+});
+
+//Animate the green box to move with setInterval//
+$(document).ready(function(){
+  let $green = $('#green');
+  greenLeft = $green.offset().left;
+  setInterval(function()  {
+    $green.css('left', ++greenLeft);
+  }, 100);
+})
+
+//Animate the red box to move with setInterval//
+$(document).ready(function()  {
+  let $red = $('#red'),
+  redLeft = $('#red').offset().left;
+  function moveRed()  {
+    $red.css('left', ++redLeft);
+    setTimeout(moveRed,200);
+  }
+  moveRed();
+});
+
+//Animate the slidshow to fade//
+$(document).ready(function()  {
+  slideShow();
+});
+
+function  slideShow() {
+  let current = $('#photos .show');
+  let next = current.next().length ?
+   current.next() : current.siblings().first();
+
+   current.hide().removeClass('show');
+   next.fadeIn().addClass('show');
+
+   setTimeout(slideShow, 3000);
+}
