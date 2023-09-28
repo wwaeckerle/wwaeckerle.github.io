@@ -257,13 +257,13 @@ nav.nav-menu a:active    {
     background-color: #fff;
 }
 
-.row_one    {
+.row_1   {
     display: flex;    
     padding: 2em 0em 2em 0em;
     font-family: 'Times New Roman', Times, serif;
 
 }
-.row_two    {
+.row_2    {
     display: flex;
     padding: 2em 0em 2em 0em;
     font-family: 'Times New Roman', Times, serif;
@@ -271,28 +271,13 @@ nav.nav-menu a:active    {
     background-color: #0D0D0D;
 }
 
-.row_three    {
-    display: flex;    
-    padding: 2em 0em 4em 0em;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.row_four    {
-    display: flex;
-    padding: 2em 0em 2em 0em;
-    font-family: 'Times New Roman', Times, serif;
-    color: #fff;
-    background-color: #0D0D0D;
-}
-
-
-.row_five   {
+.row_3    {
     display: flex;    
     padding: 2em 0em 4em 0em;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.row_six    {
+.row_4    {
     display: flex;
     padding: 2em 0em 2em 0em;
     font-family: 'Times New Roman', Times, serif;
@@ -300,13 +285,13 @@ nav.nav-menu a:active    {
     background-color: #0D0D0D;
 }
 
-.row_seven   {
+.row_5   {
     display: flex;    
     padding: 2em 0em 4em 0em;
     font-family: 'Times New Roman', Times, serif;
-} 
+}
 
-.row_eight  {
+.row_6   {
     display: flex;
     padding: 2em 0em 2em 0em;
     font-family: 'Times New Roman', Times, serif;
@@ -314,12 +299,47 @@ nav.nav-menu a:active    {
     background-color: #0D0D0D;
 }
 
-.row_nine   {
+.row_7   {
     display: flex;    
     padding: 2em 0em 4em 0em;
     font-family: 'Times New Roman', Times, serif;
 } 
 
+.row_8  {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #0D0D0D;
+}
+
+.row_9   {
+    display: flex;    
+    padding: 2em 0em 4em 0em;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.row_10  {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #0D0D0D;
+}
+
+.row_11  {
+    display: flex;    
+    padding: 2em 0em 4em 0em;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.row_12  {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #0D0D0D;
+}
 /*main a links Menu*/
 
     main a:link  {
@@ -341,16 +361,17 @@ nav.nav-menu a:active    {
     }
 
 @media (min-width:35em) {
-    .main   { 
+    .main   {
         background-color: #fff;
     }
-    .row_one    {
+    
+    .row_1   {
         display: flex;    
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
     
     }
-    .row_two    {
+    .row_2    {
         display: flex;
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
@@ -358,54 +379,75 @@ nav.nav-menu a:active    {
         background-color: #0D0D0D;
     }
     
-    .row_three    {
+    .row_3    {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .row_4    {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+    
+    .row_5   {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
     }
     
-
-    .row_four    {
+    .row_6   {
         display: flex;
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
         color: #fff;
         background-color: #0D0D0D;
     }
-        
-    .row_five   {
-        display: flex;    
-        padding: 2em 0em 4em 0em;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    .row_six    {
-        display: flex;
-        padding: 2em 0em 2em 0em;
-        font-family: 'Times New Roman', Times, serif;
-        color: #fff;
-        background-color: #0D0D0D;
-    }
-
-    .row_seven   {
+    
+    .row_7   {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
     } 
-
-    .row_eight  {
+    
+    .row_8  {
         display: flex;
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
         color: #fff;
         background-color: #0D0D0D;
     }
-
-    .row_nine   {
+    
+    .row_9   {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
     } 
+    
+    .row_10  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+    
+    .row_11  {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+    
+    .row_12  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
         
     /*main a links Menu*/
 
@@ -430,17 +472,17 @@ nav.nav-menu a:active    {
     }
 
 @media (min-width: 50em)    {
-    .main   { 
+    .main   {
         background-color: #fff;
     }
-        
-    .row_one    {
+    
+    .row_1   {
         display: flex;    
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
     
     }
-    .row_two    {
+    .row_2    {
         display: flex;
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
@@ -448,54 +490,75 @@ nav.nav-menu a:active    {
         background-color: #0D0D0D;
     }
     
-    .row_three    {
+    .row_3    {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
     }
-
-
-    .row_four    {
-        display: flex;
-        padding: 2em 0em 2em 0em;
-        font-family: 'Times New Roman', Times, serif;
-        color: #fff;
-        background-color: #0D0D0D;
-    }   
-        
-    .row_five   {
-        display: flex;    
-        padding: 2em 0em 4em 0em;
-        font-family: 'Times New Roman', Times, serif;
-    } 
-
-    .row_six    {
-        display: flex;
-        padding: 2em 0em 2em 0em;
-        font-family: 'Times New Roman', Times, serif;
-        color: #fff;
-        background-color: #0D0D0D;
-    }
-    .row_seven   {
-        display: flex;    
-        padding: 2em 0em 4em 0em;
-        font-family: 'Times New Roman', Times, serif;
-    } 
     
-    .row_eight  {
+    .row_4    {
         display: flex;
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
         color: #fff;
         background-color: #0D0D0D;
     }
-
-    .row_nine   {
+    
+    .row_5   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .row_6   {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+    
+    .row_7   {
         display: flex;    
         padding: 2em 0em 4em 0em;
         font-family: 'Times New Roman', Times, serif;
     } 
     
+    .row_8  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+    
+    .row_9   {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+    
+    .row_10  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+    
+    .row_11  {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+    
+    .row_12  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
     /*main a links Menu*/
 
     main a:link  {
@@ -858,6 +921,61 @@ button.butt {
     cursor: pointer; 
 }
 
+#heart  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+
+}
+#arrow  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
+
+}
+#fader  {
+        position: relative;
+      }
+
+#fader .to {
+        display: none;
+        position: absolute;
+        left: 0;
+      }
+
+.box    {
+        position:relative;
+        width: 50px;
+        height: 50px;
+}
+
+#green  {
+    background-color:#33cc25 ;
+}
+
+#red    {
+    background-color: #ff0800;
+    
+}
+
+#photos img {
+    display:none;
+}
+
+#photos .show   {
+    display:inline;
+}
+
+/*       
+
 #TestDiv9   {
     position: relative;
     height: 400px;
@@ -865,7 +983,7 @@ button.butt {
     margin:10px;
     padding: 20px;
     cursor: pointer;
-}
+} */
 
 
 
@@ -1021,19 +1139,63 @@ button.butt {
         padding: 20px;
         cursor: pointer; 
     }
-
-    #TestDiv9   {
-        position: relative;
-        height: 400px;
-        width:400px;
-        margin:10px;
-        padding: 20px;
-        cursor: pointer;
-    }  
     
-};
+    #heart  {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        padding: 20px;
+        left: 100px;
+        cursor: pointer; 
+
+    }
+
+    #arrow  {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        padding: 20px;
+        left: 100px;
+        cursor: pointer; 
+
+    }
+    #fader  {
+        position: relative;
+    }
+
+    #fader .to {
+        display: none;
+        position: absolute;
+        left: 0;
+      }
+      
+
+    .box    {
+        position:relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    #green  {
+        background-color:#33cc25 ;
+    }
+
+    #red    {
+        background-color: #ff0800; 
+    }
+
+    #photos img {
+        display:none;
+    }
+
+    #photos .show   {
+        display:inline;
+    }
 
 
+}
 
 
 @media (min-width: 50em)    {
@@ -1180,21 +1342,61 @@ button.butt {
     cursor: pointer; 
     }
     
-    #TestDiv9   {
+        
+    #heart  {
     position: relative;
-    height: 400px;
-    width:400px;
-    margin:10px;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
     padding: 20px;
-    cursor: pointer;
+    left: 100px;
+    cursor: pointer; 
+    }
+
+    #arrow  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    left: 100px;
+    cursor: pointer; 
     }
     
-    };
-    
-        
-        
-        
+    #fader  {
+    position: relative;
+    }
 
+    #fader .to {
+    display: none;
+    position: absolute;
+    left: 0;
+    }
+
+    .box    {
+    position:relative;
+    width: 50px;
+    height: 50px;
+    }
+    
+    #green  {
+    background-color:#33cc25 ;
+    }
+    
+    #red    {
+    background-color: #ff0800;
+    }
+    
+    #photos img {
+    display:none;
+    }
+    
+    #photos .show   {
+    display:inline;
+    }
+     
+        
+}
 
 /*base*/
 
