@@ -340,6 +340,23 @@ nav.nav-menu a:active    {
     color: #fff;
     background-color: #0D0D0D;
 }
+
+.row_13  {
+    display: flex;    
+    padding: 2em 0em 4em 0em;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+
+.row_14  {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #0D0D0D;
+}
+
+
 /*main a links Menu*/
 
     main a:link  {
@@ -442,6 +459,21 @@ nav.nav-menu a:active    {
     } 
     
     .row_12  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+
+    .row_13  {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+
+        
+    .row_14  {
         display: flex;
         padding: 2em 0em 2em 0em;
         font-family: 'Times New Roman', Times, serif;
@@ -559,6 +591,23 @@ nav.nav-menu a:active    {
         color: #fff;
         background-color: #0D0D0D;
     }
+
+    .row_13  {
+        display: flex;    
+        padding: 2em 0em 4em 0em;
+        font-family: 'Times New Roman', Times, serif;
+    } 
+
+    .row_14  {
+        display: flex;
+        padding: 2em 0em 2em 0em;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        background-color: #0D0D0D;
+    }
+    
+
+
     /*main a links Menu*/
 
     main a:link  {
@@ -581,11 +630,9 @@ nav.nav-menu a:active    {
 
 }
 
-
-
     
 /*footer section*/
-footer.page-footer  {
+.footer  {
     padding:2em 1em 1em 2em;
     background-color: #0D0D0D;
 }
@@ -596,30 +643,23 @@ footer  {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     color:#fff;
+    background-color: #0D0D0D;
     text-indent: 0em;
 }
-
-footer
-ul.nav-menu   {   
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-    background-color:#0D0D0D;
-
+.footer .row    {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+}
+.footer .row ul{
+    width: 100%;
 }
 
-footer 
-ul.nav-menu> li + li  {
-    border:0;
+.footer .row ul li  {
+    display: inline-block;
+    margin: 0px 30px;
 }
 
-footer
-ul.nav-menu > li > a   {   
-    display: block;
-    padding:2em;
-    color: #fff;
-    font-weight: normal;
-}
 
 
 /*footer a links Menu*/
@@ -647,41 +687,36 @@ a:active    {
 }
 
 @media (min-width: 35em)    {
+/*footer section*/
+    .footer  {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+
     footer  {
         display: flex;
         text-align: left;
         text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:#fff;
+        background-color: #0D0D0D;
         text-indent: 0em;
     }
-
-    footer.page-footer  {
-        padding:2em 1em 1em 2em;
-        background-color: #0D0D0D;
+    .footer .row    {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
     }
- 
-    footer
-    ul.nav-menu   {   
-        margin: 0;
-        padding-left: 0;
-        list-style: none;
-        background-color:#0D0D0D;
+    .footer .row ul{
+        width: 100%;
     }
 
-    footer 
-    ul.nav-menu> li + li  {
-        border:0;
+    .footer .row ul li  {
+        display: inline-block;
+        margin: 0px 30px;
     }
 
-    footer
-    ul.nav-menu > li > a   {   
-        display:block;
-        padding: 2em;
-        color: #fff;
-        font-weight: normal;
-    }
-    
+
     /*footer a links Menu*/
 
     footer
@@ -709,67 +744,61 @@ a:active    {
 }
 
 @media (min-width: 50em)    {
+    .footer  {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+    
     footer  {
         display: flex;
         text-align: left;
         text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:#fff;
+        background-color: #0D0D0D;
         text-indent: 0em;
     }
-
-    footer.page-footer  {
-        padding:2em 1em 1em 2em;
-        background-color: #0D0D0D;
+    .footer .row    {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
     }
-
-    footer
-    ul.nav-menu   {   
-        margin: 0;
-        padding-left: 0;
-        list-style: none;
-        background-color:#0D0D0D;
+    .footer .row ul{
+        width: 100%;
     }
     
-    footer 
-    ul.nav-menu> li + li  {
-        border:0;
-
+    .footer .row ul li  {
+        display: inline-block;
+        margin: 0px 30px;
     }
     
-    footer
-    ul.nav-menu > li > a   {   
-        display: block;
-        padding: 2em;
-        color: #fff;
-        font-weight: normal;
-    }
-        
+    
+    
     /*footer a links Menu*/
-
+    
     footer
     a:link  {
         color:#fff;
         text-decoration: none;
     }
-
+    
     footer 
     a:visited   {
         color: #fff;
     }
-
+    
     footer 
     a:hover   {
         text-decoration: underline;
         color: #322E3D;
     }
-
+    
     footer
     a:active    {
         color: #322E3D;
     }
-    
 }
+   
 
 
 /*week one*/
@@ -967,24 +996,91 @@ button.butt {
 }
 
 #photos img {
-    display:none;
+    width: 100px;
+    height: 100px;
 }
 
 #photos .show   {
     display:inline;
 }
 
-/*       
+#dropdownpractice   {
+    padding: 2em 2em 2em 2em;
+}
 
-#TestDiv9   {
-    position: relative;
-    height: 400px;
-    width:400px;
-    margin:10px;
+#practice_menu  {
+    position: absolute;
+    padding: 2px;
+}
+
+#practice_menu, #practice_menu ul   {
+    padding: 2px;
+    margin: 0;
+    list-style: none;
+}
+
+#practice_menu li   {
+    float: left;
+}
+
+#practice_menu a    {
+    display: block;
+    padding: 5px;
+    width: 130px;
+}
+
+#practice_menu li ul  { 
+    position: absolute;
+    left: -999em;
+    width: 140px;
+}
+
+#practice_menu li:hover ul, #practice_menu li ul:hover   {
+    left: auto;
+}
+
+.epropagation   {
+    border: 1px solid #fff;
     padding: 20px;
-    cursor: pointer;
-} */
+}
 
+#accordion  {
+    width: 400px;
+}
+
+#accordion li   {
+    cursor: pointer;
+    background: url('/assets/port/button.png') repeat-x;
+    font-weight: bold;
+    color: #000088;
+    border: 1px solid #ffffff;
+    margin-bottom: 2px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding: 4px 8px;
+
+}
+#accordion li.active{
+	color:#ff0800;
+}
+#accordion li ul{
+	padding:0;
+	margin:10px 0 0 0;
+}
+
+#accordion li.active li{
+	text-indent:0;
+}
+#accordion li li{
+	font-weight: normal;
+    color: #fff;
+	background:none;
+	border:0;
+}
+
+
+ 
 
 
 
@@ -1187,15 +1283,94 @@ button.butt {
     }
 
     #photos img {
-        display:none;
+        width: 100px;
+        height: 100px;
     }
 
     #photos .show   {
         display:inline;
+        }
+       
+    #dropdownpractice   {
+        padding: 2em 2em 2em 2em;
+    }
+    
+    #practice_menu  {
+        position: absolute;
+        padding: 2px;
+    }
+
+    #practice_menu, #practice_menu ul   {
+        padding: 2px;
+        margin: 0;
+        list-style: none;
+    }
+
+    #practice_menu li   {
+        float: left;
+    }
+
+    #practice_menu a    {
+        display: block;
+        padding: 5px;
+        width: 130px;
+    }
+
+    #practice_menu li ul  { 
+        position: absolute;
+        left: -999em;
+        width: 140px;
+    }
+
+    #practice_menu li:hover ul, #practice_menu li ul:hover   {
+        left: auto;
+    }
+
+    .epropagation   {
+        border: 1px solid #fff;
+        padding: 20px;
+    }
+
+    #accordion  {
+        width: 400px;
+    }
+
+    #accordion li   {
+        cursor: pointer;
+        background: url('/assets/port/button.png') repeat-x;
+        font-weight: bold;
+        color: #000088;
+        border: 1px solid #ffffff;
+        margin-bottom: 2px;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none;
+        padding: 4px 8px;
+    
+    }
+    #accordion li.active{
+        color:#ff0800;
+    }
+    #accordion li ul{
+        padding:0;
+        margin:10px 0 0 0;
+    }
+    
+    #accordion li.active li{
+        text-indent:0;
+    }
+    #accordion li li{
+        font-weight: normal;
+        color: #fff;
+        background:none;
+        border:0;
+    }
+    
+
+
     }
 
 
-}
 
 
 @media (min-width: 50em)    {
@@ -1388,14 +1563,92 @@ button.butt {
     }
     
     #photos img {
-    display:none;
+    width: 100px;
+    height: 100px;
     }
     
     #photos .show   {
     display:inline;
     }
-     
-        
+
+    #dropdownpractice   {
+    padding: 2em 2em 2em 2em;
+    }
+
+    #practice_menu  {
+    position: absolute;
+    padding: 2px;
+    }
+
+    #practice_menu, #practice_menu ul   {
+    padding: 2px;
+    margin: 0;
+    list-style: none;
+    }
+
+    #practice_menu li   {
+    float: left;
+    }
+
+    #practice_menu a    {
+    display: block;
+    padding: 5px;
+    width: 130px;
+    }
+
+    #practice_menu li ul  { 
+    position: absolute;
+    left: -999em;
+    width: 140px;
+    }
+
+    #practice_menu li:hover ul, #practice_menu li ul:hover   {
+    left: auto;
+    }  
+   
+    .epropagation   {
+    border: 1px solid #fff;
+    padding: 20px;
+    }
+
+    
+    #accordion  {
+    width: 400px;
+    }
+    
+    #accordion li   {
+    cursor: pointer;
+    background: url('/assets/port/button.png') repeat-x;
+    font-weight: bold;
+    color: #000088;
+    border: 1px solid #ffffff;
+    margin-bottom: 2px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding: 4px 8px;
+
+    }
+
+    #accordion li.active{
+	color:#ff0800;
+    }
+    #accordion li ul{
+	padding:0;
+	margin:10px 0 0 0;
+    }
+
+    #accordion li.active li{
+	text-indent:0;
+    }
+
+    #accordion li li{
+	font-weight: normal;
+    color: #fff;
+	background:none;
+	border:0;
+    }
+
 }
 
 /*base*/
