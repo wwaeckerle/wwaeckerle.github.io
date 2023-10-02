@@ -184,23 +184,97 @@
                 </div>
             </section>
         </div>
-        <div class="row_11">
+         <div class="row_11">
             <section id="section_11">
-                
-
+            <h3>Practice with menus!</h3>
+            <div id="dropdownpractice">
+            <nav role="navigation">
+                <ul id="practice_menu">
+                    <li><a href="#">Topic One</a>
+                        <ul class="active">
+                            <li><a href="#">Topic 1A</a></li>
+                            <li><a href="#">Topic 1B</a></li>
+                            <li><a href="#">Topic 1C</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Topic Two</a>
+                    <ul>
+                        <li><a href="#"> Topic 2A</a></li>
+                        <li><a href="#">Topic 2B</a></li>
+                    </ul>  
+                    </li>
+                    <li><a href="#">Topic Three</a>
+                        <ul>
+                          <li><a href="#">Topic 3A</a></li>
+                          <li><a href="#">Topic 3B</a></li>
+                          <li><a href="#">Topic 3C</a></li>
+                        </ul>
+                      </li>       
+                </ul>
+            </nav>
+            </div>
+            <br>
             </section>
         </div>
         <div class="row_12">
             <section id="section_12">
-                
-
+            <div>
+                <h2> Practice with event propagation</h2>
+                <div class="epropagation" id="outer">
+                    Click Outer!
+                    <div class="epropagation" id="inner">
+                    Click Inner
+                    </div>
+                </div>
+            </div>
             </section>
         </div>
+        <div class="row_13">
+            <section id="section_13">
+            <div id="simple_accordion">
+            <p>Below will be an example of a simple accordion menu </p>
+            <ul id="accordion">
+                <li class= "active">Topic One
+                <ul>
+                    <li><a href="#">Topic 1A</a> &nbsp;New!</li>
+                    <li><a href="#">Topic 1B</a></li>
+                    <li><a href="#">Topic 1C</a></li>
+                </ul>
+                </li>
+                <li>Topic Two
+                    <ul>
+                    <li><a href="#">Topic 2A</a></li>
+                    <li><a href="#">Topic 2B</a></li>
+                    </ul>
+                </li>
+                <li>Topic Three
+                    <ul>
+                        <li><a href="#">Topic 3A</a></li>
+                        <li><a href="#">Topic 3B</a></li>
+                        </ul>
+                </li>
+                <li>Topic Four
+                    <ul>
+                        <li><a href="#">Topic 4A</a></li>
+                        <li><a href="#">Topic 4B</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div> 
+            </section>
+        </div>
+        <div class="row_14">
+            <section id="section_14">
+         
+            </section>
+        </div>
+
     </main>
 
-
 <!-- footer section below -->
-    <footer class="page-footer">
+<footer>
+    <div class="footer">
+        <div class="row">
             <div class="footer-text">
                 <p>Questions? Comments?<br>
                     Contact: <br>
@@ -208,17 +282,19 @@
                     Phone: (555)-555-5555 
                 </p>
             </div>
-            <nav class="menu" id="main-menu">
-                            <ul class="nav-menu">
-                                <li><a href="index.html">
-                                    HOME</a></li>
-                                <li><a href="contact.html">
-                                    CONTACT</a></li>
-                                <li><a href="portfolio.html">
-                                    PORTFOLIO</a></li>
-                            </ul>
-            </nav>
-    </footer>
+        </div>
+        <div class="row">
+            <ul>
+                <li><a href="/index.html">
+                    HOME</a></li>
+                <li><a href="/contact.html">
+                    CONTACT</a></li>
+                <li><a href="/portfolio.html">
+                    PORTFOLIO</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
     <script src="JS/portfolio.js"></script>
     </body>
 </html>
