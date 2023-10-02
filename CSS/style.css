@@ -294,13 +294,34 @@ footer a:active    {
 
 }
 
+.footer  {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+    
 footer  {
-    display: flex;
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    color:#fff;
-    text-indent: 0em;
-}
+        display: flex;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        color:#fff;
+        background-color: #0D0D0D;
+        text-indent: 0em;
+    }
+.footer .row    {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
+    }
+.footer .row ul{
+        width: 100%;
+    }
+    
+.footer .row ul li  {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+    
 
 
 
@@ -314,13 +335,34 @@ footer  {
         padding: 2em 0em 2em 0em;
     }
 
+.footer  {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+    
     footer  {
         display: flex;
         text-align: left;
+        text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:#fff;
+        background-color: #0D0D0D;
         text-indent: 0em;
     }
+    .footer .row    {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
+    }
+    .footer .row ul{
+        width: 100%;
+    }
+    
+    .footer .row ul li  {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+    
 }
 
 @media (min-width: 50em)    {
@@ -332,40 +374,37 @@ footer  {
         padding: 2em 0em 2em 0em;
     }
 
+    .footer  {
+        padding:2em 1em 1em 2em;
+        background-color: #0D0D0D;
+    }
+    
     footer  {
         display: flex;
         text-align: left;
+        text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:#fff;
+        background-color: #0D0D0D;
         text-indent: 0em;
     }
-
-
-}
-
-
-
-    
-/*footer section*/
-footer.page-footer  {
-    padding:2em 1em 1em 2em;
-    background-color: #0D0D0D;
-}
-
-@media (min-width: 35em)    {
-    footer.page-footer  {
-        padding:2em 1em 1em 2em;
-        background-color: #0D0D0D;
+    .footer .row    {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
     }
-}
-
-@media (min-width: 50em)    {
-    footer.page-footer  {
-        padding:2em 1em 1em 2em;
-        background-color: #0D0D0D;
+    .footer .row ul{
+        width: 100%;
     }
     
+    .footer .row ul li  {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+    
+
 }
+
 
 
 /*week one*/
