@@ -1050,7 +1050,7 @@ button.butt {
 
 #accordion li   {
     cursor: pointer;
-    background: url('/assets/port/button.png') repeat-x;
+    background: url('assets/port/button.png') repeat-x;
     font-weight: bold;
     color: #000088;
     border: 1px solid #ffffff;
@@ -1337,7 +1337,7 @@ button.butt {
 
     #accordion li   {
         cursor: pointer;
-        background: url('/assets/port/button.png') repeat-x;
+        background: url('assets/port/button.png') repeat-x;
         font-weight: bold;
         color: #000088;
         border: 1px solid #ffffff;
@@ -1618,7 +1618,7 @@ button.butt {
     
     #accordion li   {
     cursor: pointer;
-    background: url('/assets/port/button.png') repeat-x;
+    background: url('assets/port/button.png') repeat-x;
     font-weight: bold;
     color: #000088;
     border: 1px solid #ffffff;
