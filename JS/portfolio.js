@@ -208,7 +208,7 @@ $("#TestDiv8").animate({
 });
 
 
-//Animate one image to fade onto the other//
+//Animate one image to rollover fade onto the other//
 $(document).ready(function()  {
   $('#fader').hover(function()  {
   $(this).find('img:eq(1)').stop(true,true).fadeIn();
@@ -217,7 +217,7 @@ $(document).ready(function()  {
 })
 });
 
-//Animate the green box to move with setInterval//
+//Animate the green box to move with setInterval timer//
 $(document).ready(function(){
   let $green = $('#green');
   greenLeft = $green.offset().left;
@@ -226,7 +226,7 @@ $(document).ready(function(){
   }, 100);
 })
 
-//Animate the red box to move with setInterval//
+//Animate the red box to move with setInterval timer//
 $(document).ready(function()  {
   let $red = $('#red'),
   redLeft = $('#red').offset().left;
@@ -237,7 +237,7 @@ $(document).ready(function()  {
   moveRed();
 });
 
-//Animate the slidshow to fade//
+//Animate the slidshow_fade//
 $(document).ready(function()  {
   slideShow();
 });
@@ -252,3 +252,62 @@ function  slideShow() {
 
    setTimeout(slideShow, 3000);
 }
+
+
+
+//Animate a dropdown menu
+$(document).ready(function(){
+  $('#practice_menu li ul').css({
+    display: "none",
+    left: "auto"
+  });
+  $('#practice_menu li').hover(function() {
+    $(this)
+      .find('ul')
+      .stop(true, true)
+      .slideDown('fast');
+  }, function() {
+    $(this)
+      .find('ul')
+      .stop(true,true)
+      .fadeOut('fast');
+  });
+});
+
+
+//Animate with event propagation
+$(document).ready(function ()  {
+  $('.epropagation').click(function() {
+    alert('Hello from ' + $(this).attr('id'));
+  });
+});
+
+
+///Animate a simple accordion menu
+$(document).ready(function(){
+    $('#simple_accordion ul > li ul')
+      .click(function(event){
+      event.stopPropagation();
+  })
+  .filter(':not(:first)')
+  .hide();
+
+
+$('#simple_accordion ul > li').click(function(){
+  let selfClick = $(this).find('ul:first').is(':visible');
+  if(selfClick)  {
+    return;
+  }
+
+ $(this)
+    .parent()
+    .find('> li ul:visible')
+    .slideToggle();
+  
+
+$(this)
+.find('ul:first')  
+.stop(true, true)
+.slideToggle();
+});
+});
